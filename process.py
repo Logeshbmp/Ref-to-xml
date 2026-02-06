@@ -6,13 +6,22 @@ import requests
 # --- Custom Styling ---
 st.set_page_config(page_title="Ref to XML", page_icon="🧬", layout="wide")
 
-st.markdown("""
-    <div style='text-align: center;'>
-        <h2 style='font-size: 42px; font-weight: 900; color: #1a1a1a; margin-bottom: 20px;'>
-             Reference to XML Tagging Tool 
-        </h2>
-    </div>
+col1, col2 = st.columns([2, 3])
+
+with col1:
+    st.image('TNQTech-Logo_CROPPED.png', width=250)
+    
+with col2:
+    st.markdown(f"""
+        <div style='text-align: left; padding-right: 20px;'>
+            <h2 style='font-size: 42px; font-weight: 700; color: #1a1a1a; margin-bottom: -30px;'>
+                 Reference to XML Tagging Tool 
+            </h2>
+        </div>
     """, unsafe_allow_html=True)
+
+st.markdown("<hr style='border: 4px solid #e0e0e0; margin-bottom: 0px; margin-top: 0px;'>", unsafe_allow_html=True)
+
 
 st.markdown("""
     <style>
@@ -226,5 +235,10 @@ with col2:
             </div>
         """, unsafe_allow_html=True)
 
-st.markdown("<br><hr>", unsafe_allow_html=True)
-st.markdown('<p style="text-align: center; color: #9e9e9e;">Developed for High-Precision Publishing Workflows</p>', unsafe_allow_html=True)
+st.markdown("<hr style='border: 4px solid #e0e0e0; margin-top: 10px; margin-bottom: 10px;'>", unsafe_allow_html=True)
+st.markdown("""
+    <div style='display: flex; justify-content: space-between; align-items: center;' class='header-footer'>
+        <p style='font-weight: normal; font-size: 17px;' color: #5d6d7e;>©2026 TNQTech. All rights reserved.</p>
+        <p style='font-weight: normal; font-size: 17px;' color: #5d6d7e;>🛠️ Developed By Logesh kumar K and Marimuthu S</p>
+    </div>
+    """, unsafe_allow_html=True)
